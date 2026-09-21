@@ -1,10 +1,11 @@
-import  pageAnotacao  from './pages/anotacao'
+import  {PageAnotacao}  from './pages/anotacao'
 
 function App (){
   return(
     <>
-    <pageAnotacao/>
+    <PageAnotacao/>
     </>
   )
 }
-      
+
+export default App

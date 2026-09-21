@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Container } from "./styles";
 
 
-export function pageAnotacao (){
+export function PageAnotacao (){
     
     const [titulo, setTitulo] = useState('')
     const [decricao, setDescricao] = useState('')
