@@ -3,11 +3,12 @@ import styled from "styled-components"
 export const Container = styled.div`
     min-height: 100vh;
     width: 100%;
+   
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 40px 20px;
 
     background-color: #f5f5f5;
@@ -87,6 +88,7 @@ export const Container = styled.div`
         resize: vertical;
 
         outline: none;
+        resize: none;
 
         &:focus {
             border-color: #6c63ff;
