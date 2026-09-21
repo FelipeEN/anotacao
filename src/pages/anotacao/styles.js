@@ -45,7 +45,7 @@ export const Container = styled.div`
 
     input {
         width: 100%;
-
+        box-sizing: border-box;
         padding: 13px 15px;
 
         margin-bottom: 20px;
@@ -68,7 +68,31 @@ export const Container = styled.div`
             color: #999;
         }
     }
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
 
+        min-height: 120px;
+
+        padding: 13px 15px;
+
+        margin-bottom: 20px;
+
+        border: 1px solid #d1d1d1;
+        border-radius: 8px;
+
+        font-size: 15px;
+        font-family: inherit;
+
+        resize: vertical;
+
+        outline: none;
+
+        &:focus {
+            border-color: #6c63ff;
+            box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+        }
+    }
     #btnForm {
         width: 100%;
 

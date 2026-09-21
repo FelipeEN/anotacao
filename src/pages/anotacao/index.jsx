@@ -22,13 +22,14 @@ export function PageAnotacao (){
                 />
 
                 <label htmlFor="descricao">Descrição</label>
-                <input 
+                <textarea   
                     id="descricao"
-                    placeholder="Estudar banco para ..."
-                    type="text" 
+                    placeholder="Estudar banco para ..." 
                     value={decricao}
                     onChange={(e)=> setDescricao(e.target.value)}
-                />
+                >
+                </textarea>
+                
                 <button
                     type="submit"
                     id="btnForm"
