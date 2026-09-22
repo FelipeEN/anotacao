@@ -1,14 +1,16 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Container = styled.div`
     min-height: 100vh;
     width: 100%;
-   
+
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
     padding: 40px 20px;
 
     background-color: #f5f5f5;
@@ -16,7 +18,14 @@ export const Container = styled.div`
     h3 {
         font-size: 28px;
         color: #222;
+
         margin-bottom: 30px;
+    }
+    P{
+        font-size: 18px;
+        color: #222;
+
+        margin-bottom: 18px;
     }
 
     form {
@@ -33,6 +42,8 @@ export const Container = styled.div`
         border-radius: 12px;
 
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+        box-sizing: border-box;
     }
 
     label {
@@ -47,6 +58,7 @@ export const Container = styled.div`
     input {
         width: 100%;
         box-sizing: border-box;
+
         padding: 13px 15px;
 
         margin-bottom: 20px;
@@ -62,6 +74,7 @@ export const Container = styled.div`
 
         &:focus {
             border-color: #6c63ff;
+
             box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
         }
 
@@ -69,33 +82,8 @@ export const Container = styled.div`
             color: #999;
         }
     }
-    textarea {
-        width: 100%;
-        box-sizing: border-box;
 
-        min-height: 120px;
-
-        padding: 13px 15px;
-
-        margin-bottom: 20px;
-
-        border: 1px solid #d1d1d1;
-        border-radius: 8px;
-
-        font-size: 15px;
-        font-family: inherit;
-
-        resize: vertical;
-
-        outline: none;
-        resize: none;
-
-        &:focus {
-            border-color: #6c63ff;
-            box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
-        }
-    }
-    #btnForm {
+    #btnEntrar {
         width: 100%;
 
         padding: 13px;
@@ -121,23 +109,11 @@ export const Container = styled.div`
             transform: scale(0.98);
         }
     }
-
-        #caixa-botoes {
-        width: 100%;
-        max-width: 500px;
-
-        display: flex;
-        gap: 15px;
-
-        margin-top: 20px;
-    }
-
-    #btnVerAnotacoes,
-    #btnSair {
+ #btnCadastrar {
         flex: 1;
 
         padding: 12px 20px;
-
+        margin-bottom: 12px;
         border-radius: 8px;
 
         font-size: 15px;
@@ -147,34 +123,20 @@ export const Container = styled.div`
 
         transition: 0.2s;
     }
-
-    #btnVerAnotacoes {
-        background-color: #ffffff;
-        color: #6c63ff;
-
-        border: 1px solid #6c63ff;
-    }
-
-    #btnVerAnotacoes:hover {
-        background-color: #6c63ff;
-        color: #ffffff;
-    }
-
-    #btnSair {
+     #btnCadastrar {
         background-color: #ffffff;
         color: #555;
 
         border: 1px solid #d1d1d1;
     }
 
-    #btnSair:hover {
+    #btnCadastrar:hover {
         background-color: #f1f1f1;
         border-color: #aaa;
     }
 
     #btnVerAnotacoes:active,
-    #btnSair:active {
+    #btnCadastrar:active {
         transform: scale(0.98);
     }
-
-`
+`;

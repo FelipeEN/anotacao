@@ -34,9 +34,25 @@ export function PageAnotacao (){
                     type="submit"
                     id="btnForm"
                 >
-                    Cadastrar
+                    Criar
                 </button>
             </form>
+            <div id="caixa-botoes">
+
+                <button
+                    type="button"
+                    id="btnVerAnotacoes"
+                    >   
+                    Ver Anotações
+                </button>
+
+                <button
+                    type="button"
+                    id="btnSair"
+                    >   
+                    Sair
+                </button>
+            </div>
         </Container>
     )
 }
