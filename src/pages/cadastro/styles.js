@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    min-height: 100vh;
+ min-height: 100vh;
     width: 100%;
-
     box-sizing: border-box;
-    gap: 15px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,13 +17,12 @@ export const Container = styled.div`
     h3 {
         font-size: 28px;
         color: #222;
-
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
-    P{
+
+    p {
         font-size: 18px;
         color: #222;
-
         margin-bottom: 18px;
     }
 
@@ -49,9 +47,7 @@ export const Container = styled.div`
     label {
         font-size: 15px;
         font-weight: 600;
-
         color: #333;
-
         margin-bottom: 8px;
     }
 
@@ -60,21 +56,18 @@ export const Container = styled.div`
         box-sizing: border-box;
 
         padding: 13px 15px;
-
         margin-bottom: 20px;
 
         border: 1px solid #d1d1d1;
         border-radius: 8px;
 
         font-size: 15px;
-
         outline: none;
 
         transition: 0.2s;
 
         &:focus {
             border-color: #6c63ff;
-
             box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
         }
 
@@ -83,7 +76,7 @@ export const Container = styled.div`
         }
     }
 
-    #btnEntrar {
+    #btnCadastrar {
         width: 100%;
 
         padding: 13px;
@@ -109,11 +102,15 @@ export const Container = styled.div`
             transform: scale(0.98);
         }
     }
- #btnCadastrar {
-        flex: 1;
+
+    #btnVoltar {
+        width: 100%;
+        max-width: 500px;
+
+        margin-top: 15px;
 
         padding: 12px 20px;
-        margin-bottom: 12px;
+
         border-radius: 8px;
 
         font-size: 15px;
@@ -121,26 +118,20 @@ export const Container = styled.div`
 
         cursor: pointer;
 
-        transition: 0.2s;
-    }
-     #btnCadastrar {
         background-color: #ffffff;
         color: #555;
 
         border: 1px solid #d1d1d1;
+
+        transition: 0.2s;
+
+        &:hover {
+            background-color: #f1f1f1;
+            border-color: #aaa;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
     }
-
-    #btnCadastrar:hover {
-        background-color: #f1f1f1;
-        border-color: #aaa;
-    }
-
-    #btnVerAnotacoes:active,
-    #btnCadastrar:active {
-        transform: scale(0.98);
-    }
-
-
-    
-`;
-
+` 
